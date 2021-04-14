@@ -1,0 +1,213 @@
+@import "../../utils/colors";
+
+.navigation-link {
+	color: var(--color-black);
+	text-decoration: none;
+}
+
+.navigation-item.active {
+	background-color: var(--color-dark);
+}
+
+.drawer-logo {
+	position: relative;
+	left: -20%;
+	fill: $primary;
+}
+
+// .acadp-search-inline .row.acadp-no-margin p {
+// 	display: none !important;
+// }
+
+// .acadp.acadp-listings.acadp-grid-view {
+// 	position: relative !important;
+// 	top: -100px !important;
+// }
+
+// .adp-social {
+// 	display: none;
+// }
+
+// .acadp-search-inline .row.acadp-no-margin p {
+// 	display: none !important;
+// }
+// .acadp.acadp-listings.acadp-grid-view {
+// 	position: relative !important;
+// 	top: -100px !important;
+// }
+
+// .acadp.acadp-listings.acadp-grid-view .thumbnail.acadp-entry {
+// 	margin: 0 !important;
+// }
+
+// .acadp.acadp-listings.acadp-grid-view .acadp-divider {
+// 	display: none !important;
+// }
+
+// .page-id-1988 .entry p,
+// .middle_row p,
+// .text_box p {
+// 	padding-left: 0 !important;
+// }
+
+// .thumbnail.acadp-entry ~ p,
+// .thumbnail.acadp-entry .caption ~ p,
+// .acadp.acadp-listings.acadp-grid-view .col-md-3 ~ p {
+// 	display: none !important;
+// }
+
+// .acadp.acadp-listings.acadp-grid-view .col-md-3 {
+// 	margin-bottom: 10px !important;
+// }
+
+// // novo
+
+// .thumbnail.acadp-entry .acadp-responsive-container ~ p {
+// 	display: none !important;
+// }
+
+// .thumbnail.acadp-entry p.acadp-no-margin,
+// .acadp-listings-desc {
+// 	padding-left: 0px !important;
+// }
+
+// .thumbnail.acadp-entry .acadp-listings-title-block,
+// .thumbnail.acadp-entry .acadp-listings-desc {
+// 	text-align: center !important;
+// }
+
+// .thumbnail.acadp-entry .acadp-listings-title-block {
+// 	text-align: center !important;
+// }
+
+// .thumbnail.acadp-entry .acadp-listings-title-block h3.acadp-no-margin ~ p {
+// 	padding-left: 0px !important;
+// }
+
+// .thumbnail.acadp-entry .acadp-listings-desc {
+// 	padding-left: 0px !important;
+// }
+
+// .thumbnail.acadp-entry .acadp-responsive-container ~ p {
+// 	display: none !important;
+// }
+
+// .acadp-search-inline .acadp-action-buttons .btn {
+// 	margin: 0 !important;
+// 	position: relative !important;
+// 	z-index: 99999999 !important;
+// }
+
+// .acadp.acadp-listings.acadp-grid-view .btn-toolbar.pull-right ~ p {
+// 	display: none !important;
+// }
+
+// ul.pagination.acadp-no-margin .page-numbers {
+// 	color: #000 !important;
+// }
+
+// .thumbnail.acadp-entry .acadp-listings-title-block h3.acadp-no-margin a {
+// 	color: wheat !important;
+// }
+
+// // novo
+
+// .acadp-search-inline .acadp-action-buttons button[type="submit"] {
+// 	color: #337ab7 !important;
+// }
+
+// .middle_row.breadcrumbs p,
+// .middle_row.row_white.search_row p {
+// 	padding-left: 0px !important;
+// }
+
+// #mega-menu-default {
+// 	padding-left: 0px !important;
+// }
+
+// #acadp-register-form label.control-label {
+// 	text-align: left !important;
+// }
+
+// .post-aside.clearfix .acadp-listing .col-md-12 ~ p {
+// 	display: none !important;
+// }
+
+// .post-aside.clearfix .entry {
+// 	padding-top: 0 !important;
+// }
+
+// .post-aside.clearfix .acadp-listing p[class=""] {
+// 	margin: 0 !important;
+// }
+
+// .post-aside.clearfix .acadp-listing .col-md-12 p:nth-child(1) {
+// 	margin: 0 !important;
+// }
+
+// .post-aside.clearfix
+// 	.acadp-listing
+// 	.list-group.acadp-margin-bottom
+// 	br[class=""] {
+// 	display: none !important;
+// }
+
+// .post-aside.clearfix
+// 	.acadp-listing
+// 	.list-group.acadp-margin-bottom
+// 	span.text-primary {
+// 	color: #fff !important;
+// }
+
+// .acadp.acadp-widget-listing-address .acadp-phone {
+// 	text-align: center !important;
+// 	line-height: 32px;
+// }
+
+// .post-aside.clearfix .acadp-listing p:nth-child(7) {
+// 	color: #337ab7 !important;
+// }
+
+// .post-aside.clearfix .acadp-listing p[class=""] {
+// 	padding-left: 0 !important;
+// }
+
+// .post-aside.clearfix .list-group.acadp-margin-bottom {
+// 	margin-left: 0 !important;
+// }
+
+// .post-aside.clearfix {
+// 	border-bottom: 0 !important;
+// }
+
+// .post-aside.clearfix .pull-left.acadp-post-title .text-muted {
+// 	color: #3279b5 !important;
+// }
+
+// .acadp.acadp-user.acadp-post-form p[class=""] {
+// 	margin: 0 !important;
+// }
+
+// .panel.panel-default .panel-body ~ p {
+// 	display: none !important;
+// }
+
+// .panel.panel-default .panel-body .form-group ~ p {
+// 	display: none !important;
+// }
+
+// .panel.panel-default .panel-body .form-group .col-md-6 ~ p {
+// 	display: none !important;
+// }
+
+// #acadp-upload-image {
+// 	color: #333 !important;
+// }
+
+// #acadp-custom-fields-listings p[class=""] {
+// 	padding-left: 0 !important;
+// }
+
+// .panel.panel-default .panel-body .help-block {
+// 	padding-left: 0 !important;
+// }

@@ -1,0 +1,286 @@
+#calendarWrapp {
+	margin-top: 60px;
+}
+
+$vacation: #f59b1f;
+$sick: #ff7000;
+$free: #0491ac;
+
+.rbc-calendar {
+	.rbc-row-segment {
+		display: flex;
+	}
+	.calendar-toolbar {
+		display: flex;
+		margin-bottom: 50px;
+		justify-content: space-between;
+
+		.calendar-navigation {
+			display: flex;
+			align-items: center;
+			> .label {
+				width: 200px;
+				text-align: center;
+				font-size: 15px;
+			}
+
+			button {
+				width: 35px;
+				height: 35px;
+				border: 1px solid var(--color-dark);
+				border-radius: 4px;
+				background-color: var(--color-light);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+
+				&::before {
+					content: "";
+					width: 10px;
+					height: 10px;
+					border-top: 2px solid #bccde5;
+					border-right: 2px solid #bccde5;
+					transform: rotate(45deg);
+					margin-left: -3px;
+				}
+
+				&:first-child {
+					&::before {
+						transform: rotate(-135deg);
+						margin-right: -5px;
+					}
+				}
+			}
+		}
+
+		.calendar-view-control {
+			button {
+				background-color: transparent;
+				border: none;
+				font-size: 13px;
+				text-transform: capitalize;
+				padding: 7px 15px;
+				border-radius: 4px;
+				margin-left: 5px;
+
+				&.active {
+					background-color: var(--color-primary);
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.rbc-row {
+		.rbc-event {
+			background-color: transparent;
+			border: 1px solid var(--color-primary);
+			color: var(--color-primary);
+			font-family: "AvenirDemi";
+			padding: 4px;
+			margin-bottom: 2px;
+
+			&.vacation {
+				border: 1px solid $vacation;
+				color: $vacation;
+			}
+			&.sick {
+				border: 1px solid $sick;
+				color: $sick;
+			}
+			&.free {
+				border: 1px solid $free;
+				color: $free;
+			}
+		}
+	}
+
+	.rbc-month-view {
+		border-top: none;
+
+		.rbc-header {
+			padding-bottom: 17px;
+			font-family: "Avenir";
+			text-transform: uppercase;
+			font-weight: 500;
+		}
+
+		.rbc-date-cell {
+			color: #416495;
+			font-size: 15px;
+			padding-right: 10px;
+			padding-top: 9px;
+		}
+
+		.rbc-off-range-bg {
+			background-color: #fff;
+		}
+		.rbc-off-range {
+			color: #97a3b4 !important;
+			opacity: 0.4;
+		}
+	}
+}
+.fc-scroller.fc-scroller-liquid-absolute,
+.fc .fc-scroller-harness {
+	overflow: visible !important;
+}
+
+.event-tooltip {
+	width: 100px;
+	white-space: pre-wrap;
+}
+
+.calendar-legend {
+	display: flex;
+
+	> div {
+		display: flex;
+		align-items: center;
+		margin-right: 47px;
+		margin-top: 21px;
+		font-size: 13px;
+	}
+
+	.type-color {
+		display: inline-block;
+		height: 3px;
+		width: 40px;
+		margin-right: 7px;
+
+		&.vacation {
+			background-color: $vacation;
+		}
+		&.sick-leave {
+			background-color: $sick;
+		}
+		&.free-days {
+			background-color: $free;
+		}
+	}
+}
+
+.fc-daygrid-day-frame {
+	padding: 5px;
+}
+
+.fc-daygrid-day-events {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.event-avatar {
+	color: var(--color-black);
+	// font-family: 'AvenirDemi';
+	width: 33px;
+	height: 33px;
+	border-radius: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	background-color: var(--color-dark);
+
+	.event-tooltip {
+		position: absolute;
+		top: -35px;
+		// left: 0;
+		// left: 40px;
+		background-color: var(--color-primary);
+		color: #fff;
+		border-radius: 4px;
+		padding: 5px;
+		visibility: hidden;
+		font-size: 12px;
+	}
+
+	&:hover {
+		.event-tooltip {
+			visibility: visible;
+		}
+	}
+}
+
+.custom-event {
+	width: 33px;
+	height: 33px;
+	background: none;
+	border: none;
+	img {
+		width: 100%;
+		border-radius: 100%;
+	}
+
+	.vacation img,
+	.vacation.event-avatar {
+		border: 2px solid $vacation;
+	}
+
+	.sick img,
+	.sick.event-avatar {
+		border: 2px solid $sick;
+	}
+
+	.free img,
+	.sick.event-avatar {
+		border: 2px solid $free;
+	}
+}
+
+.fc-scrollgrid-liquid {
+	border-top: 0 !important;
+	border-color: var(--color-dark) !important;
+}
+
+.fc-daygrid-day-number {
+	color: #416495;
+	font-size: 15px;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+	border-color: var(--color-dark);
+}
+
+.fc-col-header {
+	text-transform: uppercase;
+
+	.fc-col-header-cell-cushion {
+		font-family: "Avenir";
+		color: var(--color-black);
+		font-weight: 400;
+		font-size: 12px;
+	}
+}
+
+.fc-header-toolbar {
+	.fc-toolbar-chunk {
+		display: flex;
+		align-items: center;
+
+		.fc-button-primary {
+			&,
+			&:focus,
+			&:active {
+				box-shadow: none !important;
+				background-color: var(--color-light);
+				border: 0;
+				color: #bccde5;
+			}
+		}
+
+		.fc-toolbar-title {
+			font-size: 15px;
+			min-width: 180px;
+			text-align: center;
+			text-transform: capitalize;
+		}
+	}
+}
+
+.fc .fc-daygrid-day-number,
+.fc-col-header .fc-col-header-cell-cushion {
+	cursor: default;
+	text-decoration: none;
+}

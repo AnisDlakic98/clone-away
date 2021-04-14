@@ -1,0 +1,169 @@
+.custom-card {
+	height: 142px;
+	background-color: var(--color-primary);
+	display: flex;
+	flex-direction: column;
+	color: #fff;
+	padding: 11px 15px;
+	border-radius: 10px;
+	position: relative;
+	font-size: 15px;
+	margin-right: 20px;
+
+	.data-card-data {
+		font-size: 70px;
+	}
+
+	&::before {
+		content: "";
+		display: inline-block;
+		position: absolute;
+		width: 140px;
+		height: 140px;
+		background-color: rgba(255, 255, 255, 0.1);
+		border-radius: 100%;
+		bottom: -50px;
+		right: -20px;
+	}
+
+	&.data-card {
+		width: 220px;
+
+		.card-head {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+		}
+
+		&.data-card-super {
+			.extra-select {
+				position: relative;
+
+				.current-extra {
+					display: flex;
+					align-items: center;
+					gap: 5px;
+					cursor: pointer;
+				}
+
+				.options {
+					position: absolute;
+					list-style: none;
+					left: 0;
+					cursor: pointer;
+					visibility: hidden;
+					padding: 0;
+				}
+
+				&.active {
+					.options {
+						visibility: visible;
+					}
+
+					.arrow {
+						transform: rotate(-135deg);
+						margin-top: 0;
+					}
+				}
+			}
+
+			.arrow {
+				width: 7px;
+				height: 7px;
+				border-bottom: 2px solid #fff;
+				border-right: 2px solid #fff;
+				transform: rotate(45deg);
+				display: flex;
+				margin-top: -5px;
+			}
+		}
+	}
+
+	&.profile-card {
+		display: flex;
+		flex-direction: row;
+		width: 345px;
+		align-items: center;
+		gap: 20px;
+
+		.profile-image {
+			width: 95px;
+			height: 95px;
+			background-size: cover;
+			background-position: center;
+			border-radius: 100%;
+		}
+
+		.avatar-initials {
+			width: 95px;
+			height: 95px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 36px;
+			letter-spacing: -1px;
+			background-color: rgba($color: #fff, $alpha: 0.1);
+			border-radius: 50%;
+		}
+
+		.name {
+			font-size: 15px;
+			margin-bottom: 2px;
+		}
+
+		.position {
+			font-size: 13px;
+			margin-bottom: 10px;
+		}
+
+		.sector {
+			font-size: 13px;
+		}
+
+		&-super {
+			padding: 11px 20px;
+
+			.name {
+				margin-bottom: 0;
+			}
+
+			.position {
+				margin-bottom: 2px;
+			}
+
+			.sector {
+				margin-bottom: 10px;
+			}
+
+			.email {
+				font-size: 13px;
+			}
+
+			.profile-image {
+				border-radius: 6px;
+				position: relative;
+
+				.change-photo {
+					visibility: hidden;
+					background-color: rgba($color: #000000, $alpha: 0.4);
+					position: absolute;
+					bottom: 0;
+					font-size: 11px;
+					width: 100%;
+					height: 40px;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					border-radius: 0 0 6px 6px;
+					cursor: pointer;
+				}
+
+				&:hover {
+					.change-photo {
+						visibility: visible;
+					}
+				}
+			}
+		}
+	}
+}

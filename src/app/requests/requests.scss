@@ -1,0 +1,21 @@
+.requests {
+	.head-filters {
+		form {
+			grid-template-columns:
+				minmax(100px, 220px) minmax(100px, 220px) minmax(100px, 220px)
+				minmax(100px, 165px) minmax(100px, 165px) minmax(100px, 220px) 0.3fr;
+		}
+	}
+	.table-container {
+		position: relative;
+	}
+}
+
+.request-filters-wrapp {
+	display: flex;
+	margin-bottom: 30px;
+	.css-2b097c-container {
+		width: 200px;
+		margin-right: 20px;
+	}
+}
